@@ -1,0 +1,23 @@
+# Exclude build output — Docker builds fresh inside the container
+target/
+
+# Exclude IDE and OS files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.DS_Store
+
+# Exclude git metadata
+.git/
+.gitignore
+.gitattributes
+
+# Exclude docs and test reports
+HELP.md
+postman/
+
+# Exclude secrets from the image filesystem
+# (env vars are passed at runtime via docker-compose, not baked into the image)
+.env
